@@ -13,8 +13,8 @@ This is the fullstack boilerplate for AdonisJs, it comes pre-configured with.
 
 # RUN
 
-```adonis serve --dev
+adonis serve --dev
 
 # Route
 
-```http://localhost:3333
+http://localhost:3333
