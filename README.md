@@ -12,7 +12,9 @@ This is the fullstack boilerplate for AdonisJs, it comes pre-configured with.
 8. Migrations and seeds
 
 # RUN
+
 ```adonis serve --dev
 
 # Route
+
 ```http://localhost:3333
