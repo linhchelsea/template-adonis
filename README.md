@@ -11,8 +11,8 @@ This is the fullstack boilerplate for AdonisJs, it comes pre-configured with.
 7. Lucid ORM
 8. Migrations and seeds
 
-###RUN
+# RUN
 ```adonis serve --dev
 
-###Route
+# Route
 ```http://localhost:3333
