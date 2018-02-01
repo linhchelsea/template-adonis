@@ -1,0 +1,37 @@
+@layout('backend/pages/layout')
+  @section('content')
+<div class="full-page lock-page" filter-color="black" data-image="/backend/img/lock.jpeg">
+  <div class="content">
+    <form method="post" action="#">
+      <div class="card card-profile card-hidden">
+        <div class="card-avatar">
+          <a href="#pablo">
+            <img class="avatar" src="/backend/img/faces/avatar.jpg" alt="..."/>
+          </a>
+        </div>
+        <div class="card-content">
+          <h4 class="card-title">Tania Andrew</h4>
+          <div class="form-group label-floating">
+            <label class="control-label">Enter Password</label>
+            <input type="password" class="form-control"/>
+          </div>
+        </div>
+        <div class="card-footer">
+          <button type="button" class="btn btn-rose btn-round">Unlock</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  @endsection
+  @section('js')
+<script type="text/javascript">
+$().ready(function () {
+  demo.checkFullPageBackgroundImage();
+
+  setTimeout(function () {
+    // after 1000 ms we add the class animated to the login/register card
+    $('.card').removeClass('card-hidden');
+  }, 700)
+});
+</script>
+  @endsection

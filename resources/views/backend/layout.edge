@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8"/>
+  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png"/>
+  <link rel="icon" type="image/png" href="../assets/img/favicon.png"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <title>Material Dashboard Pro by Creative Tim</title>
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'
+        name='viewport'/>
+  <meta name="viewport" content="width=device-width"/>
+  <!-- Bootstrap core CSS     -->
+  {{ css('/backend/css/bootstrap.min.css') }}
+  <!--  Material Dashboard CSS    -->
+  {{ css('/backend/css/material-dashboard.css?v=1.2.1') }}
+  <!--  CSS for Demo Purpose, don't include it in your project     -->
+  {{ css('/backend/css/demo.css') }}
+  <!--     Fonts and icons     -->
+  {{ css('http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css') }}
+  <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons"/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+</head>
+
+<body>
+<div class="wrapper">
+  @include('backend.partial.left-bar')
+  <div class="main-panel">
+    @include('backend.partial.header')
+    @!section('content')
+    @include('backend.partial.footer')
+  </div>
+</div>
+</body>
+<!--   Core JS Files   -->
+{{ script('/backend/js/jquery-3.2.1.min.js') }}
+{{ script('/backend/js/bootstrap.min.js') }}
+{{ script('/backend/js/material.min.js') }}
+{{ script('/backend/js/perfect-scrollbar.jquery.min.js') }}
+<!-- Include a polyfill for ES6 Promises (optional) for IE11, UC Browser and Android browser support SweetAlert -->
+{{ script('https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js') }}
+<!-- Library for adding dinamically elements -->
+{{ script('/backend/js/arrive.min.js') }}
+<!-- Forms Validations Plugin -->
+{{ script('/backend/js/jquery.validate.min.js') }}
+<!--  Plugin for Date Time Picker and Full Calendar Plugin-->
+{{ script('/backend/js/moment.min.js') }}
+<!--  Charts Plugin, full documentation here: https://gionkunz.github.io/chartist-js/ -->
+{{ script('/backend/js/chartist.min.js') }}
+<!--  Plugin for the Wizard, full documentation here: https://github.com/VinceG/twitter-bootstrap-wizard -->
+{{ script('/backend/js/jquery.bootstrap-wizard.js') }}
+<!--  Notifications Plugin, full documentation here: http://bootstrap-notify.remabledesigns.com/    -->
+{{ script('/backend/js/bootstrap-notify.js') }}
+<!--  Plugin for the DateTimePicker, full documentation here: https://eonasdan.github.io/bootstrap-datetimepicker/ -->
+{{ script('/backend/js/bootstrap-datetimepicker.js') }}
+<!-- Vector Map plugin, full documentation here: http://jvectormap.com/documentation/ -->
+{{ script('/backend/js/jquery-jvectormap.js') }}
+<!-- Sliders Plugin, full documentation here: https://refreshless.com/nouislider/ -->
+{{ script('/backend/js/nouislider.min.js') }}
+<!--  Google Maps Plugin    -->
+{{ script('https://maps.googleapis.com/maps/api/js?key=AIzaSyB1xE6coSSZDCHBKp2o4gaO2-0dUFxn9vA') }}
+<!--  Plugin for Select, full documentation here: http://silviomoreto.github.io/bootstrap-select -->
+{{ script('/backend/js/jquery.select-bootstrap.js') }}
+<!--  DataTables.net Plugin, full documentation here: https://datatables.net/    -->
+{{ script('/backend/js/jquery.datatables.js') }}
+<!-- Sweet Alert 2 plugin, full documentation here: https://limonte.github.io/sweetalert2/ -->
+{{ script('/backend/js/sweetalert2.js') }}
+<!-- Plugin for Fileupload, full documentation here: http://www.jasny.net/bootstrap/javascript/#fileinput -->
+{{ script('/backend/js/jasny-bootstrap.min.js') }}
+<!--  Full Calendar Plugin, full documentation here: https://github.com/fullcalendar/fullcalendar    -->
+{{ script('/backend/js/fullcalendar.min.js') }}
+<!-- Plugin for Tags, full documentation here: https://github.com/bootstrap-tagsinput/bootstrap-tagsinputs  -->
+{{ script('/backend/js/jquery.tagsinput.js') }}
+<!-- Material Dashboard javascript methods -->
+{{ script('/backend/js/material-dashboard.js?v=1.2.1') }}
+<!-- Material Dashboard DEMO methods, don't include it in your project! -->
+{{ script('/backend/js/demo.js') }}
+@section('js')
+@endsection
+
+</html>
